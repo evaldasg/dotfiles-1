@@ -1,4 +1,4 @@
 export CLASSPATH=~/.clojure/nailgun/nailgun-0.7.1.jar:$CLASSPATH
-export PATH=~/bin:~/script:$PATH
+export PATH=~/bin:~/script:/usr/local/bin:$PATH
 
-. ~/.config/bash/git.aliases.bash
+. ~/dotfiles/bash/git.aliases.bash
