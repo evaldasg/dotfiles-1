@@ -54,6 +54,11 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
+# five-finger tap gesture on magic trackpad will set orientation, so you
+# can use it upside-down (and hang the hump off a table).
+# from: http://hints.macworld.com/article.php?story=20101029060726179
+defaults write com.apple.MultitouchSupport ForceAutoOrientation YES
+
 # Require password immediately after sleep or screen saver begins
 #defaults write com.apple.screensaver askForPassword -int 1
 #defaults write com.apple.screensaver askForPasswordDelay -int 0
